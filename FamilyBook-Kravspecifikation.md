@@ -60,7 +60,18 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
   1. Systemet presenterar ett felmeddelande.
   2. Steg 2 i huvudscenario. 
   
-##AF5 - Ändra profiltext-
+##AF5 - Ändra profiltext.
+###Förhandsvillkor
+1. Användaren är inloggad, se AF1.
+
+###Huvudscenario
+1. Användaren vill ändra i sin profiltext.
+2. Systemet ber om ny text.
+3. Användare ger systemet ny text.
+4. Systemet ändrar i profiltexten.
+
+##AF6 - Posta inlägg.
+
 3. Posta inlägg
 4. Kommentera på skrivna inlägg.
 5. Ta bort inlägg
