@@ -80,11 +80,27 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 3. Användaren ger systemet innehåll.
 4. Systemet skapar ett inlägg i flödet. 
 
+##AF7 - Ta bort inlägg.
+###Förhandsvillkor
+1. Användaren är inloggad, se AF1.
+2. Användaren har skapat ett inlägg, se AF6.
 
-4. Kommentera på skrivna inlägg.
-5. Ta bort inlägg
-7. Posta viktiga meddelande. 
+###Huvudscenario
+1. Användaren vill ta bort skapat inlägg.
+2. Systemet frågar användaren om denna är helt säker.
+3. Användaren vill fortfarande ta bort inlägget.
+4. Systemet raderar inlägget från flödet.
+
+###Alternativt scenario
+3a Användaren vill inte ta bort inlägget
+  1. Systemet tar inte bort inlägget från flödet.
+ 
+##AF8 - Skapa viktig händelse.
+###Förhandsvillkor
+1. Användaren är inloggad, se AF1.
 
 // Användningsfall om tid finns till
+
+Kommentera inlägg.
+ändra inlägg. 
 (Bestäm vem som har makt att ta bort/ lägga till användare i gruppen)
-ändra inlägg
