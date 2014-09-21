@@ -9,7 +9,7 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 
 ##AF1 - Logga in 
 ###Huvud scenario
-1. Startar när användaren vill logga in i applikationen.
+1. Användaren vill logga in i applikationen.
 2. Systemet frågar efter användarnamn, lösenord och gruppnamn.
 3. Användaren ger systemet dessa uppgifter.
 4. Användare loggas in i applikationen.
@@ -24,18 +24,18 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 1. Användaren är inloggad, se AF1.
 
 ###Huvudscenario
-1. Startar när användaren vill logga ut från applikationen. 
+1. Änvändaren vill logga ut från applikationen. 
 2. Systemet presenterar en logg ut knapp.
 3. Användaren väljer logga ut. 
 4. Systemet loggar ut användaren från applikationen.
 
 ##AF3 - Registrera Användare
 ###Huvudscenario
-1. Startar när användare vill registrera en ny grupp. 
+1. Användaren vill starta en ny grupp. 
 2. Systemet frågar efter tänkt gruppnamn.
 3. Användaren ger systemet ett gruppnamn.
 4. Systemet skapar en ny grupp och frågar användaren om antal användare samt användarnamn och lösenord för dessa.
-5. Användare ger systemet användaruppgifter. 
+5. Användaren ger systemet användaruppgifterna. 
 6. Systemet skapar användarprofiler till gruppen.
 
 ###Alternativt scenario
@@ -120,9 +120,9 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 ###Alternativt scenario
 3a Användaren vill inte ta bort den viktiga händelsen.
   1. Systemet tar inte bort händelsen.
-  2. 
+ 
 
-**-------------------- Användingsfall om tid finns med (eller för senare utveckling) --------------------------**
+**-------------------- Användingsfall om tid finns (eller för senare utveckling) --------------------------**
 
 ##AF10 - Ändra inlägg.
 ###Förhandsvillkor
