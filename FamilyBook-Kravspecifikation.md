@@ -1,6 +1,7 @@
 #FamilyBook – Kravspecifikation 
 
 Jag har tänkt att göra en applikation som heter FamilyBook i detta projekt.
+
 I min applikation vill jag ha ett flöde som liknar facebook, där man kan skapa, ta bort och ändra inlägg.
 I sin profil har man namn, en bild och en valfri kort text. 
 Flödet visas bara för personer som är inloggade i den skapade gruppen, därav blir applikationen mer privat än facebook.
