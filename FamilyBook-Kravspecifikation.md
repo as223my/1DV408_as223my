@@ -2,7 +2,7 @@
 
 Jag har tänkt att göra en applikation som heter FamilyBook i detta projekt.
 
-I min applikation vill jag ha ett flöde som liknar facebook, där man kan skapa, ta bort och ändra inlägg.
+I min applikation vill jag ha ett flöde som liknar facebook, där man kan skapa och ta bort inlägg.
 I sin profil har man namn, en bild och en valfri kort text. 
 Flödet visas bara för personer som är inloggade i den skapade gruppen, därav blir applikationen mer privat än facebook.
 Det ska också gå att lägga till viktiga händelser som visas automatiskt inom en bestämd tid. 
@@ -44,7 +44,6 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
   2. Användaren väljer därefter ett nytt gruppnamn.
   3. Steg 4 i huvudscenario. 
   
-
 ##AF4 - Ändra profilbild.
 ###Förhandsvillkor
 1. Användaren är inloggad, se AF1.
@@ -122,13 +121,22 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 3a Användaren vill inte ta bort den viktiga händelsen.
   1. Systemet tar inte bort händelsen.
 
+-------------------- Användingsfall om tid finns med (eller för senare utveckling) --------------------------
 
+##AF10 - ändra inlägg.
+###Förhandsvillkor
+1. Användaren är inloggad, se AF1.
+2. En viktig händelse finns.
 
+###Huvudscenario
+1. Användaren vill ta bort en viktig händelse, innan tiden gått ut.
+2. Systemet frågar användaren om denna är säker.
+3. Användaren är säker.
+4. Systemet tar bort den viktiga händelsen.
 
+###Alternativt scenario
+3a Användaren vill inte ta bort den viktiga händelsen.
+  1. Systemet tar inte bort händelsen.
 
-
-// Användningsfall om tid finns till
-
-Kommentera inlägg.
-ändra inlägg. 
+kommentera inlägg.
 (Bestäm vem som har makt att ta bort/ lägga till användare i gruppen)
