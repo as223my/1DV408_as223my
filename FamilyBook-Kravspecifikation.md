@@ -23,14 +23,14 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 ###Förhandsvillkor
 1. Användaren är inloggad, se AF1.
 
-###Huvud scenario
+###Huvudscenario
 1. Startar när användaren vill logga ut från applikationen. 
 2. Systemet presenterar en logg ut knapp.
 3. Användaren väljer logga ut. 
 4. Systemet loggar ut användaren från applikationen.
 
 ##AF3 - Registrera Användare
-###Huvud scenario
+###Huvudscenario
 1. Startar när användare vill registrera en ny grupp. 
 2. Systemet frågar efter tänkt gruppnamn.
 3. Användaren ger systemet ett gruppnamn.
@@ -45,12 +45,12 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
   3. Steg 4 i huvudscenario. 
   
 
-##AF4 - Ändra profil bild.
+##AF4 - Ändra profilbild.
 ###Förhandsvillkor
 1. Användaren är inloggad, se AF1.
 
-###Huvud scenario
-1. Användaren vill ändra sin profil bild.
+###Huvudscenario
+1. Användaren vill ändra sin profilbild.
 2. Systemet frågar efter ny bild.
 3. Användaren ger systemet ny bild.
 4. Systemet ändrar profilbilden. 
@@ -58,10 +58,9 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 ###Alternativt scenario
 3a. Användaren ger systemet en bildfil som inte är korrekt.
   1. Systemet presenterar ett felmeddelande.
-  2. Steg 2 i huvudscenariot. 
+  2. Steg 2 i huvudscenario. 
   
-
-4. Profil text. 
+##AF5 - Ändra profiltext-
 3. Posta inlägg
 4. Kommentera på skrivna inlägg.
 5. Ta bort inlägg
