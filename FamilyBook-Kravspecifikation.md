@@ -99,6 +99,34 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 ###Förhandsvillkor
 1. Användaren är inloggad, se AF1.
 
+###Huvudscenario
+1. Användaren vill skapa en viktig händelse som alla kan se. 
+2. Systemet ber om innehåll till händelse.
+3. Användaren ger systemet innehåll.
+4. Systemet frågar användaren hur länge denna vill att händelsen ska visas.
+5. Användaren ger systemet tid i antal dagar.
+6. Systemet skapar en viktig händelse.
+
+##AF9 - Ta bort viktig händelse.
+###Förhandsvillkor
+1. Användaren är inloggad, se AF1.
+2. En viktig händelse finns.
+
+###Huvudscenario
+1. Användaren vill ta bort en viktig händelse, innan tiden gått ut.
+2. Systemet frågar användaren om denna är säker.
+3. Användaren är säker.
+4. Systemet tar bort den viktiga händelsen.
+
+###Alternativt scenario
+3a Användaren vill inte ta bort den viktiga händelsen.
+  1. Systemet tar inte bort händelsen.
+
+
+
+
+
+
 // Användningsfall om tid finns till
 
 Kommentera inlägg.
