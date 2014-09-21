@@ -39,6 +39,7 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 4. Systemet skapar en ny grupp och frågar användaren om antal användare samt användarnamn och lösenord för dessa.
 5. Användare ger systemet användaruppgifter. 
 6. Systemet skapar användarprofiler till gruppen.
+
 ###Alternativt scenario
 4a. Användaren har valt ett gruppnamn som redan finns i systemet.
   1. Systemet presenterar ett felmeddelande.
