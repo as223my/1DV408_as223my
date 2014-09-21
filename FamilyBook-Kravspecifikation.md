@@ -25,7 +25,7 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 
 ###Huvudscenario
 1. Änvändaren vill logga ut från applikationen. 
-2. Systemet presenterar en logg ut knapp.
+2. Systemet presenterar en logga ut knapp.
 3. Användaren väljer logga ut. 
 4. Systemet loggar ut användaren från applikationen.
 
