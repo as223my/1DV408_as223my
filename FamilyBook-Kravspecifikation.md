@@ -15,6 +15,7 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt efte
 2. Systemet frågar efter användarnamn, lösenord och gruppnamn.
 3. Användaren ger systemet dessa uppgifter.
 4. Användare loggas in i applikationen.
+
 ###Alternativt scenario
 4a. Användaren kunde inte loggas in i systemet pågrund av felaktigt lämnade uppgifter.
   1. Systemet ger användaren ett felmedelande.
