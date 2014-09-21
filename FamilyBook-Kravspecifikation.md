@@ -70,9 +70,17 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 3. Användare ger systemet ny text.
 4. Systemet ändrar i profiltexten.
 
-##AF6 - Posta inlägg.
+##AF6 - Skapa inlägg.
+###Förhandsvillkor
+1. Användaren är inloggad, se AF1.
 
-3. Posta inlägg
+###Huvudscenario
+1. Användaren vill skapa ett inlägg.
+2. Systemet ber om innehåll till inlägget.
+3. Användaren ger systemet innehåll.
+4. Systemet skapar ett inlägg i flödet. 
+
+
 4. Kommentera på skrivna inlägg.
 5. Ta bort inlägg
 7. Posta viktiga meddelande. 
