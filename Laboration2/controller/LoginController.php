@@ -57,7 +57,7 @@ class LoginController{
 				return $this->view->showLogin("Du har nu loggat ut!");
 			}
 			
-			return $this->view->showLoginSuccessful("Inloggad med cookies!");
+			return $this->view->showLoginSuccessful("Inloggning lyckades via cookies!");
 			
 		}else if($answer === "Fel på cookies"){
 			$this->view->deleteCookies();
