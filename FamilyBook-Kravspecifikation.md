@@ -20,7 +20,16 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt efte
 4a. Användaren kunde inte loggas in i systemet pågrund av felaktigt lämnade uppgifter.
   1. Systemet ger användaren ett felmedelande.
   2. Steg 2 i huvudscenario. 
-1. Logga in
+  
+##AF2 - Logga ut
+###Förhandsvillkor
+1. Användaren är inloggad, se AF1.
+###Huvud scenario
+1. Startar när användaren vill logga ut från applikationen. 
+2. Systemet presenterar en logg ut knapp.
+3. Användaren väljer logga ut. 
+4. Systemet loggar ut användaren från applikationen.
+
 2. Logga ut
 2. Registrera Användare
 3. 6. Profil bild.
