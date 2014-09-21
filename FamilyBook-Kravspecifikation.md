@@ -7,8 +7,6 @@ I sin profil har man namn, en bild och en valfri kort text.
 Flödet visas bara för personer som är inloggade i den skapade gruppen, därav blir applikationen mer privat än facebook.
 Det ska också gå att lägga till viktiga händelser som visas automatiskt inom en bestämd tid. 
 
-
------------------ Användningsfall----------------------
 ##AF1 - Logga in
 ###Huvud scenario
 1. Startar när användaren vill logga in i applikationen.
@@ -47,7 +45,22 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
   3. Steg 4 i huvudscenario. 
   
 
-3. 6. Profil bild.
+##AF4 - Ändra profil bild.
+###Förhandsvillkor
+1. Användaren är inloggad, se AF1.
+
+###Huvud scenario
+1. Användaren vill ändra sin profil bild.
+2. Systemet frågar efter ny bild.
+3. Användaren ger systemet ny bild.
+4. Systemet ändrar profilbilden. 
+
+###Alternativt scenario
+3a. Användaren ger systemet en bildfil som inte är korrekt.
+  1. Systemet presenterar ett felmeddelande.
+  2. Steg 2 i huvudscenariot. 
+  
+
 4. Profil text. 
 3. Posta inlägg
 4. Kommentera på skrivna inlägg.
