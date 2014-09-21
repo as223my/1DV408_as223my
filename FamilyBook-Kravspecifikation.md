@@ -120,23 +120,50 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 ###Alternativt scenario
 3a Användaren vill inte ta bort den viktiga händelsen.
   1. Systemet tar inte bort händelsen.
+  2. 
 
--------------------- Användingsfall om tid finns med (eller för senare utveckling) --------------------------
+**-------------------- Användingsfall om tid finns med (eller för senare utveckling) --------------------------**
 
-##AF10 - ändra inlägg.
+##AF10 - Ändra inlägg.
 ###Förhandsvillkor
 1. Användaren är inloggad, se AF1.
-2. En viktig händelse finns.
+2. Användaren har skapat ett inlägg, se AF6.
 
 ###Huvudscenario
-1. Användaren vill ta bort en viktig händelse, innan tiden gått ut.
-2. Systemet frågar användaren om denna är säker.
-3. Användaren är säker.
-4. Systemet tar bort den viktiga händelsen.
+1. Användaren vill ändra i skapat inlägg.
+2. Systemet ber användaren om ändringar.
+3. Användaren ändrar i inlägget.
+4. Systemet spara det ändrade inlägget.
 
-###Alternativt scenario
-3a Användaren vill inte ta bort den viktiga händelsen.
-  1. Systemet tar inte bort händelsen.
+##AF11 - Kommentera inlägg.
+###Förhandsvillkor
+1. Användaren är inloggad, se AF1.
+2. Inlägg finns skapade i flödet.
 
-kommentera inlägg.
-(Bestäm vem som har makt att ta bort/ lägga till användare i gruppen)
+###Huvudscenario
+1. Användaren vill kommentera ett inlägg i flödet.
+2. Systemet ber om innehåll i kommentaren.
+3. Användaren ger systemet innehåll till kommentaren.
+4. Systemet skapar en kommentar till inlägget. 
+
+##AF12 - Ta bort kommentar.
+###Förhandsvillkor
+1. Användaren är inloggad, se AF1.
+2. Användaren har kommenterat ett inlägg i flödet.
+
+###Huvudscenario
+1. Användaren vill ta bort en skapad kommentar.
+2. Systemet tar bort kommentaren.
+
+##AF13 - Ändra personer i gruppen.
+###Förhandsvillkor
+1. Användaren är inloggad, se AF1.
+2. Användaren har rättigheter att ändra personer i gruppen.
+
+###Huvudscenario
+1. Användaren vill ändra antalpersoner i gruppen.
+2. Systemet frågar efter ändringar.
+3. Användaren ger systemet ändringarna
+4. Systemet tar bort eller lägger till personer. 
+
+
