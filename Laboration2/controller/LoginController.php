@@ -54,7 +54,7 @@ class LoginController{
 			if($this->view->didUserPressLogout()){
 				$this->view->deleteCookies();
 				$this->model->sessionDestroy();
-				return $this->view->showLogin("");
+				return $this->view->showLogin("Du har nu loggat ut!");
 			}
 			
 			return $this->view->showLoginSuccessful("Inloggad med cookies!");
@@ -70,7 +70,7 @@ class LoginController{
 				
 				if($this->view->didUserPressLogout()){
 					$this->model->sessionDestroy();
-					return $this->view->showLogin("");
+					return $this->view->showLogin("Du har nu loggat ut!");
 				}
 				
 				return $this->view->showLoginSuccessful("");
