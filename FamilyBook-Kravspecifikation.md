@@ -161,7 +161,7 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 2. Användaren har rättigheter att ändra personer i gruppen.
 
 ###Huvudscenario
-1. Användaren vill ändra antalpersoner i gruppen.
+1. Användaren vill ändra antal personer i gruppen.
 2. Systemet frågar efter ändringar.
 3. Användaren ger systemet ändringarna
 4. Systemet tar bort eller lägger till personer. 
