@@ -163,7 +163,7 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 ###Huvudscenario
 1. Användaren vill ändra antal personer i gruppen.
 2. Systemet frågar efter ändringar.
-3. Användaren ger systemet ändringarna
+3. Användaren ger systemet ändringarna.
 4. Systemet tar bort eller lägger till personer. 
 
 
