@@ -24,6 +24,7 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt efte
 ##AF2 - Logga ut
 ###Förhandsvillkor
 1. Användaren är inloggad, se AF1.
+
 ###Huvud scenario
 1. Startar när användaren vill logga ut från applikationen. 
 2. Systemet presenterar en logg ut knapp.
