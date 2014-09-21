@@ -7,7 +7,7 @@ I sin profil har man namn, en bild och en valfri kort text.
 Flödet visas bara för personer som är inloggade i den skapade gruppen, därav blir applikationen mer privat än facebook.
 Det ska också gå att lägga till viktiga händelser som visas automatiskt inom en bestämd tid. 
 
-##AF1 - Logga in###Huvud scenario
+##AF1 - Logga in ###Huvud scenario
 1. Startar när användaren vill logga in i applikationen.
 2. Systemet frågar efter användarnamn, lösenord och gruppnamn.
 3. Användaren ger systemet dessa uppgifter.
