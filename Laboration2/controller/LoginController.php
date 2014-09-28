@@ -14,6 +14,10 @@ class LoginController{
 	// Kollar om det finns kakor sparade och att dessa stämmer och inte blivit manipulerade hos klienten (förlängd utgångstid, samt ändring av värdet i kaka). 
 	public function cookieLogin(){
 	
+	    if($this->model->checkIfLoggedIn()){
+			return "Inloggad med session";
+		}
+		
 		$usernameFromCookie = $this->view->getCookieUsername();
 		$passwordFromCookie = $this->view->getCookiePassword();
 
@@ -49,7 +53,18 @@ class LoginController{
 		
 		$answer = $this->cookieLogin();
 		
-		if($answer === "Inloggad med cookies"){
+		if($answer === "Inloggad med session"){
+			
+			if($this->view->didUserPressLogout()){
+				$this->view->deleteCookies();
+				$this->model->sessionDestroy();
+				return $this->view->showLogin("Du har nu loggat ut!");
+			}
+			
+			return $this->view->showLoginSuccessful("");
+			
+		}
+		else if($answer === "Inloggad med cookies"){
 			
 			if($this->view->didUserPressLogout()){
 				$this->view->deleteCookies();
@@ -109,3 +124,4 @@ class LoginController{
 		}
 	}
 }
+
