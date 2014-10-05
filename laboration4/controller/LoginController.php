@@ -65,7 +65,7 @@ class LoginController {
 				}
 							
 				$this->userRepository->create($this->user); // användarens uppgifter är godkända, lägger till användare i databasen.
-				return $this->loginView->doLoginPage($newUserCreated);
+				return $this->loginView->doLoginPage($newUserCreated,$this->user->getUserName());
 		    }
 		    
 		}else{
@@ -111,7 +111,7 @@ class LoginController {
 				$this->loginModel->removeClientIdentifier($this->loginCookieView->getCookieName());
 				$this->loginCookieView->removeCookie();
 				
-				return $this->loginView->doLoginPage($messages);
+				return $this->loginView->doLoginPage($messages,"");
 		}
 			
 		//scenario - användaren är redan inloggad, via cookies.
@@ -123,7 +123,7 @@ class LoginController {
 				$this->loginCookieView->removeCookie();
 				if(!$this->loginModel->isLoggedIn()){
 				    
-					return $this->loginView->doLoginPage($wrongInformationInCookie);
+					return $this->loginView->doLoginPage($wrongInformationInCookie,"");
 				}
 				
 				$name = $this->loginModel->getSessionName();
@@ -140,7 +140,7 @@ class LoginController {
 					$this->loginCookieView->removeCookie();
 					$messages = $this->loginModel->doLogout();
 					
-					return $this->loginView->doLoginPage($messages);
+					return $this->loginView->doLoginPage($messages,"");
 				}
 				
 				$name = $this->loginCookieView->getCookieName();
@@ -149,7 +149,7 @@ class LoginController {
 				$this->loginCookieView->removeCookie();
 				$this->loginModel->doLogout($this->loginView->getClientIdentifier());
 				
-				return $this->loginView->doLoginPage($wrongInformationInCookie);
+				return $this->loginView->doLoginPage($wrongInformationInCookie,"");
 				
 			}
 		}else if($this->loginModel->isLoggedIn()){ // inloggad via session
@@ -159,14 +159,14 @@ class LoginController {
 			    
 				if ($this->loginView->triedToLogout()){
 				    $messages = $this->loginModel->doLogout($this->loginView->getClientIdentifier());
-					return $this->loginView->doLoginPage($messages);
+					return $this->loginView->doLoginPage($messages,"");
 					
 				}
 				
 				$name = $this->loginModel->getSessionName();
 				return  $this->loginView->loggedInPage($name, "");
 			}else{
-				return $this->loginView->doLoginPage("");
+				return $this->loginView->doLoginPage("","");
 				
 			}
 			
@@ -197,13 +197,13 @@ class LoginController {
 				}else{
 			
 					if(!$this->loginView->getName()){
-						  return $this->loginView->doLoginPage($usernameMissing);
+						  return $this->loginView->doLoginPage($usernameMissing,"");
 						  
 					}else if(!$this->loginView->getPassword()){
-						   return $this->loginView->doLoginPage($passwordMissing);
+						   return $this->loginView->doLoginPage($passwordMissing,"");
 						   
 					}else{
-						return $this->loginView->doLoginPage($wrongInput);
+						return $this->loginView->doLoginPage($wrongInput,"");
 					}
 						
 				}
@@ -220,11 +220,11 @@ class LoginController {
 				
 				return $this->loginView->loggedInPage($name,"");
 			}else{
-				return $this->loginView->doLoginPage("");
+				return $this->loginView->doLoginPage("","");
 			}
 		}
 		
-	return $this->loginView->doLoginPage("");
+	return $this->loginView->doLoginPage("","");
 	
 	}
 }
