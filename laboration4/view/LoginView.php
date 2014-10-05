@@ -11,7 +11,7 @@ class LoginView{
 	private $getKey_rememberMeBox = "rememberMeBox";
 	
 	//Funktion som visar inloggningsruta
-	public function doLoginPage($message){
+	public function doLoginPage($message,$name){
 		$time = $this->getDateAndTime();
 		return "
 		<h1>Laborationskod as223my (mg222cd)</h1>
@@ -21,7 +21,7 @@ class LoginView{
 		<fieldset>
 		<legend>Login - skriv in användarnamn och lösenord</legend>
 		<p>$message</p>
-		Namn:<input type='text' name='name' value=''>
+		Namn:<input type='text' name='name' value=$name>
 		Lösenord:<input type='password' name='password'>
 		Håll mig inloggad<input type='checkbox' name='rememberMeBox'>
 		<input type='submit' name='loginButton' value='Logga in'>
