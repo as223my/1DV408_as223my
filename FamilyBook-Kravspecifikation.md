@@ -44,32 +44,8 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
   2. Användaren väljer därefter ett nytt gruppnamn.
   3. Steg 4 i huvudscenario. 
   
-##AF4 - Ändra profilbild.
-###Förhandsvillkor
-1. Användaren är inloggad, se AF1.
 
-###Huvudscenario
-1. Användaren vill ändra sin profilbild.
-2. Systemet frågar efter ny bild.
-3. Användaren ger systemet ny bild.
-4. Systemet ändrar profilbilden. 
-
-###Alternativt scenario
-3a. Användaren ger systemet en bildfil som inte är korrekt.
-  1. Systemet presenterar ett felmeddelande.
-  2. Steg 2 i huvudscenario. 
-  
-##AF5 - Ändra profiltext.
-###Förhandsvillkor
-1. Användaren är inloggad, se AF1.
-
-###Huvudscenario
-1. Användaren vill ändra i sin profiltext.
-2. Systemet ber om ny text.
-3. Användare ger systemet ny text.
-4. Systemet ändrar i profiltexten.
-
-##AF6 - Skapa inlägg.
+##AF4 - Skapa inlägg.
 ###Förhandsvillkor
 1. Användaren är inloggad, se AF1.
 
@@ -79,7 +55,7 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 3. Användaren ger systemet innehåll.
 4. Systemet skapar ett inlägg i flödet. 
 
-##AF7 - Ta bort inlägg.
+##AF5 - Ta bort inlägg.
 ###Förhandsvillkor
 1. Användaren är inloggad, se AF1.
 2. Användaren har skapat ett inlägg, se AF6.
@@ -94,7 +70,7 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 3a Användaren vill inte ta bort inlägget
   1. Systemet tar inte bort inlägget från flödet.
  
-##AF8 - Skapa viktig händelse.
+##AF6 - Skapa viktig händelse.
 ###Förhandsvillkor
 1. Användaren är inloggad, se AF1.
 
@@ -106,7 +82,7 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 5. Användaren ger systemet tid i antal dagar.
 6. Systemet skapar en viktig händelse.
 
-##AF9 - Ta bort viktig händelse.
+##AF7 - Ta bort viktig händelse.
 ###Förhandsvillkor
 1. Användaren är inloggad, se AF1.
 2. En viktig händelse finns.
@@ -121,8 +97,32 @@ Det ska också gå att lägga till viktiga händelser som visas automatiskt inom
 3a Användaren vill inte ta bort den viktiga händelsen.
   1. Systemet tar inte bort händelsen.
  
+##AF8 - Ändra profilbild.
+###Förhandsvillkor
+1. Användaren är inloggad, se AF1.
 
-**-------------------- Användingsfall om tid finns (eller för senare utveckling) --------------------------**
+###Huvudscenario
+1. Användaren vill ändra sin profilbild.
+2. Systemet frågar efter ny bild.
+3. Användaren ger systemet ny bild.
+4. Systemet ändrar profilbilden. 
+
+###Alternativt scenario
+3a. Användaren ger systemet en bildfil som inte är korrekt.
+  1. Systemet presenterar ett felmeddelande.
+  2. Steg 2 i huvudscenario. 
+  
+##AF9 - Ändra profiltext.
+###Förhandsvillkor
+1. Användaren är inloggad, se AF1.
+
+###Huvudscenario
+1. Användaren vill ändra i sin profiltext.
+2. Systemet ber om ny text.
+3. Användare ger systemet ny text.
+4. Systemet ändrar i profiltexten.
+
+**-------------------- Användingsfall för senare utveckling --------------------------**
 
 ##AF10 - Ändra inlägg.
 ###Förhandsvillkor
